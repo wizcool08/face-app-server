@@ -12,7 +12,7 @@ const profile = require("./controllers/profile");
 const db = knex({
   client: "pg",
   connection: {
-    host: "127.0.0.1",
+    host: "postgresql-fitted-22378",
     user: "",
     password: "",
     database: "face-app"
@@ -58,4 +58,3 @@ app.post("/imageUrl", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Listening to PORT - ${PORT}!`);
 });
-
