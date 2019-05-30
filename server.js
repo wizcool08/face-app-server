@@ -12,10 +12,8 @@ const profile = require("./controllers/profile");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-fitted-22378",
-    user: "",
-    password: "",
-    database: "face-app"
+    connectionString: process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
